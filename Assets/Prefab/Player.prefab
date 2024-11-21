@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 1827216109620746336}
   - component: {fileID: 2696957780282273626}
   - component: {fileID: 4162263922554663974}
-  - component: {fileID: 5449436275107289417}
-  - component: {fileID: -443978270694107875}
+  - component: {fileID: 5571111970804606657}
+  - component: {fileID: 2703361621782318611}
+  - component: {fileID: 2620414908381082909}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -126,22 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f667bf1524043f086aad04427ebe8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5449436275107289417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936061332949913048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d681e3428e24184a9cb8bfa1e3d2cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  gravity: -9.8
-  jumpHeight: 3
---- !u!114 &-443978270694107875
+--- !u!114 &5571111970804606657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,6 +142,37 @@ MonoBehaviour:
   cam: {fileID: 0}
   xSensitivity: 30
   ySensitivity: 30
+--- !u!114 &2703361621782318611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936061332949913048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1343c8159ca9a487eb93f47eb2a5f86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 1.8
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &2620414908381082909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936061332949913048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d681e3428e24184a9cb8bfa1e3d2cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  gravity: -9.8
+  jumpHeight: 3
 --- !u!1 &2771914004279791215
 GameObject:
   m_ObjectHideFlags: 0
