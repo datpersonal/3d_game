@@ -9,8 +9,8 @@ Current functionality: It currently is able to walk around, look, jump, run, and
 Half of a door is functioning where it can open by walking into a collider.
 
 Goals for each person:
-    Matteo:
-    Kimo:
-    Ella:
-    Dat:
-    Jien:
+- Matteo:
+- Kimo:
+- Ella:
+- Dat:
+- Jien:
