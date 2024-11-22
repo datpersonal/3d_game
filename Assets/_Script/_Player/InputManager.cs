@@ -9,7 +9,9 @@ public class InputManager : MonoBehaviour
 
     private PlayerMotor motor;
     private PlayerLook look;
-    // Start is called before the first frame update
+
+    public PlayerInput.OnFootActions OnFoot => onFoot;
+
     void Awake()
     {
         playerInput = new PlayerInput();
@@ -23,21 +25,24 @@ public class InputManager : MonoBehaviour
         onFoot.Sprint.performed += ctx => motor.Sprint();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        // Tells the playermotor to move using the valye from our movement action
+        // Tells the PlayerMotor to move using the value from our movement action
         motor.ProcessMove(onFoot.Movement.ReadValue<Vector2>());
     }
-    void LateUpdate() 
+
+    void LateUpdate()
     {
+        // Tells the PlayerLook to process look input
         look.ProcesssLook(onFoot.Look.ReadValue<Vector2>());
     }
-    private void OnEnable() 
+
+    private void OnEnable()
     {
         onFoot.Enable();
     }
-    private void OnDisable() 
+
+    private void OnDisable()
     {
         onFoot.Disable();
     }
