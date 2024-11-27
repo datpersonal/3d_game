@@ -1,5 +1,3 @@
-# 3d_game
-
 # Baby Yodown
 ## Team members
 Matteo Gristina, Kimo Jumamil, Ella Suchikul, Dat Truong, Jien Zheng
