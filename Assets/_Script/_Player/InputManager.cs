@@ -33,8 +33,8 @@ public class InputManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        //if (!avatar.IsMe)//checks if player owns the current player object
-           // return;//if not then dont execute this code
+        if (!avatar.IsMe)//checks if player owns the current player object
+           return;//if not then dont execute this code
 
         // Tells the PlayerMotor to move using the value from our movement action
         motor.ProcessMove(onFoot.Movement.ReadValue<Vector2>());
