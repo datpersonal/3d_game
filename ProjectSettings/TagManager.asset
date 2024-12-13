@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Key
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -14,11 +16,11 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - Player
   - FirstPersonWeapon
   - PhysicalAmmo
-  - 
-  - 
+  - Baby Yoda
+  - Door
   - 
   - 
   - 
